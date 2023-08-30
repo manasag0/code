@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: rgb(202, 202, 202);
+    display: flex;
+}
+.card{
+    margin: 40px 20px;
+    display: flex;
+    border-radius: 40px;
+    border-top-left-radius: 40px;
+    
+    
+}
+.part-a{
+    background-color: rgb(32, 178, 112);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.part-b{
+    background-color: white;
+    padding: 5em;
+    line-height: em;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+ 
+}
+#border{
+    border-radius: 40px;
+}
+
+button {
+    color: white;
+    border: 0 solid;
+    border-radius: 40px;
+    background-color: rgb(32, 178, 112);
+    padding: 15px;
+    margin-bottom: 50x;
+}
+/*
+Which CSS property is used to align text within a table cell?
+Which CSS property is used to add space between cells in a table?
+Which CSS property is used to add a border around a table or table cell?
+Which HTML tag is used to define a table cell?
+Which CSS property is used to hide an element on certain screen sizes?
+Which HTML tag is used to merge two or more table cells into a single cell?
+
+*/
+#image-1{
+    position: absolute;
+    top: -60px;
+    height: 350px;
+    width: 350px;
+    z-index: 10;
+}
+#image-2{
+    position: absolute;
+    top: -60px;
+    height: 350px;
+    width: 350px;
+    z-index: 10;
+}
+h1,p,button{
+    margin: 20px 0;
+}

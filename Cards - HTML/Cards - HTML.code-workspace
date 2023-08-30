@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/cards - web"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Cards - HTML"
+	}
+}

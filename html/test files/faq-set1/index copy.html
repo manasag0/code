@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher and student from</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Teacher and studnet from</h1>
+    
+        <form id="form">
+          <label for="name">Name :</label>
+          <input type="text" name="name" id="name">
+        </br>
+        <label for="age">Age :</label>
+        <input type="number" name="number" id="age"></br>
+        <label for="role"></label>
+        <select name="role" id="role">
+          <option value="select">Select Here</option>
+          <option value="teacher">Teacher</option>
+          <option value="student">Student</option>
+        </select>
+        <input type="submit" value="submit">
+        </form>
+        <table id="table">
+          <tr>
+          <th>Name</th>
+          <th>age</th>
+          <th>role</th>
+        </tr>
+        </table>
+    </div>
+</body>
+<script>
+      const form = document.querySelector('#form');
+      const table = document.querySelector('#table');
+
+        form.addEventListener('submit',(event)=>{
+            event.preventDefault();
+
+            const name = document.querySelector('#name').value;
+            const age = document.querySelector('#age').value;
+            const role = document.querySelector('#role').value;
+
+            const newRow = table.insertRow();
+            newRow.insertCell().innerHTML = name;
+            newRow.insertCell().innerHTML = age;
+            newRow.insertCell().innerHTML = role;
+        })
+
+
+</script>
+</html>

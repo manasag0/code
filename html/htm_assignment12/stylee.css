@@ -1,0 +1,46 @@
+ *{
+    box-sizing: border-box;
+}
+/*
+body{
+    background-image: url("C:\Users\manas\OneDrive\Desktop\Images\snow.jpg");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    display: block;
+}
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 40px;
+    width: 70px;
+} */
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form{
+    border: 1px solid black;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+button{
+    margin: 10px;
+    padding: 5px;
+    border: 0px solid #789373;
+    border-radius: 3px;
+    text-align: center;
+}

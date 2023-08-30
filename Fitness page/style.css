@@ -1,0 +1,29 @@
+@media screen and (max-width:786px) {
+    body{
+        text-align: left;
+        height: 100vh;
+    }
+    .app-pad-x{
+        padding: 0 90px;
+    }
+    .part-a{
+        padding: 2.5em 3em;
+    }
+    .part-b{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .part-b > div{
+        flex-basis: 50%;
+        box-sizing: border-box;
+    }
+    #price-count span{
+        display: inline-block;
+    }
+    .m-y-lg{
+        margin-left: .5em;
+    }
+    .m-y-h2{
+        margin-left: .5em;
+    }
+}

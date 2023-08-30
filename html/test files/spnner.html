@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotation Animation</title>
+    <style>
+        body {
+            animation: bodycolor 3s infinite;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+    @keyframes bodycolor{
+        0%{
+            background-color: #235;
+        }
+        50%{
+            background-color : linear;
+        }
+        100%{
+            background-color: #457;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+</body>
+</html>

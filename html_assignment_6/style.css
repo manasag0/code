@@ -1,0 +1,72 @@
+body{
+    background-image: linear-gradient(30deg, white, green);
+    /* background-size: cover; */
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+}
+.main-container{
+    background-color: brown ;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: antiquewhite;
+    color: green;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+summary{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.summary{
+    width: 70%;
+    height: 50%;
+    display: flex;
+}
+summary::first-letter{
+ font-size: 28px;
+}
+nav > a {
+    text-decoration: none;
+    font-size: 25px;
+    float: right;
+    padding-left: 8PX;
+}
+nav > a:hover{
+    color:green;
+}
+
+footer {
+    background-color: red;
+    height: 50px;
+    width: 100%;
+    float: right;
+}
+
+footer > p > a {
+    text-decoration: none;
+}
+footer > p > a:hover{
+    color: green;
+    font-size: 25px;
+    background-color: darkgray;
+}
+
+ ul > li {
+    list-style: none;
+}
+
+aside{
+    border: 2px solid greenyellow;
+    border-radius: 4px;
+    background-color: burlywood;
+    width: 20%;
+    padding-left: 10px;
+    float: right; 
+}
+span{
+    font-weight: bold;
+}

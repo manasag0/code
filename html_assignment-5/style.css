@@ -1,0 +1,29 @@
+.parent{
+    width: 95vw;
+    height: 90vh;
+    border: 1px solid black;
+   
+}
+.row1{
+    background-color: antiquewhite;
+}
+.row2{
+    background-color: bisque;
+}
+.row1,.row2{
+    width: 100%;
+    height: 50%;
+}
+.col-1,.col-2 {
+    
+    width: 50%;
+    height:100%;
+    float:left;  
+}
+.img {
+    height: 100%;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}

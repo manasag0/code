@@ -1,0 +1,68 @@
+@media screen and (max-width:568px) {
+    body{
+        font-family: 'Open sans',sans-serif;  
+        /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+        padding-right: 0;
+        padding-left: 0;
+    }
+    h1{
+        font-family: 'Montserrat',sans-serif !important;
+        font-weight: 700;
+    }
+    h2{
+        padding-top: 30px;
+        font-weight: 500;
+        color: #BEBEC0;
+    }
+   
+    .header{
+        padding-top: 30px;
+        text-align: center;
+        width: 100%;
+        font-size: medium;
+    }
+    .header  p{
+        font-size: .85em;
+        font-weight: 100;
+        color: #ABABAD;
+        margin: 25px;
+        margin-bottom: 63px;
+    }
+    /* #pera{
+        /* margin: 15px;
+        padding: 10px; 
+        
+    }*/
+    img{
+        padding-left: 80%;
+        padding-top: 12%;
+    }
+    #grid-container{
+        display:flex;
+        flex-direction: column;
+        row-gap: 15px;
+    
+    }
+    img{
+        padding-left: 80%;
+        padding-top: 5%;
+    }
+    .box{
+        /* margin   : 10px 10px; */
+        box-shadow: 0 1px 3px 3px #00000029;
+        height: 220px;
+        width: 320px;
+        box-sizing: border-box;
+        /* padding: 5px 15px; */
+    }
+}

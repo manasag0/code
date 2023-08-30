@@ -1,0 +1,13 @@
+#name{
+    color: green;
+}
+.card{
+    border: 1px solid;
+    padding: 10px;
+}
+section > ul> li{
+     color: red;
+}
+ol ~ li{
+    color: blue;
+}

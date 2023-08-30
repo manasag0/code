@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Front-End Example</title>
+</head>
+<body>
+    <button id="fetchDataBtn">Fetch Data from Server</button>
+    <div id="dataDisplay"></div>
+
+    <script>
+        document.getElementById("fetchDataBtn").addEventListener("click", fetchData);
+
+        function fetchData() {
+            fetch("http://localhost:3000/api/data")
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("dataDisplay").textContent = JSON.stringify(data);
+                })
+                .catch(error => console.error("Error fetching data:", error));
+        }
+    </script>
+</body>
+</html>

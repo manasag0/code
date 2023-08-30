@@ -1,0 +1,152 @@
+
+ *{
+      box-sizing: border-box;
+ }
+   
+ body{
+    font-family: 'Montserrat','Open Sans',sans-serif;
+    margin: 0;
+ }
+ .circle{
+   height: 40px;
+   width: 40px;
+   border: 4px solid #E7A09E;
+   border-radius: 50px;
+}
+.text{
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: 5px;
+}
+.circle-text{
+   display: flex;
+   padding-top: 2em;
+   padding-bottom: 2em;
+}
+
+.container{
+   display: flex;
+   background-image: linear-gradient(136deg,#FCF3F3,#ffffff,#FAF1F0);
+   min-height: 100vh;
+}
+
+.left{
+   padding: 0 100px;
+}
+.right{
+   background-image: url('./Rectangle\ 41.png');
+   background-size: cover;
+   width: 40%;
+   background-position: center center;
+   min-width: 650px;
+
+}
+#bg-mobile{
+   display: none;
+}
+h1 span{
+   color: #D2A1A2;
+   display: block;
+   font-weight: 200;
+}
+h1{
+   text-transform: uppercase;
+   font-size: 60px;
+   color: #393334;
+   letter-spacing: 10px;
+   font-weight: 600;
+   line-height: 1.;
+   margin-bottom: 0;
+}
+p{
+   color:#9A6B69;
+   line-height: 24px;
+   margin:  30px 0;
+
+}
+form{
+ position: relative;  
+}
+
+input{
+   background-color: transparent;
+   border: 1px solid #9A6B69;
+   border-radius: 50px;
+   font-size: 16px;
+   padding: 15px;
+   width: 100%;
+   opacity: 1;
+   margin-bottom: 5px;
+}
+input:focus{
+   border-width: 2px;
+   outline: none;
+   box-shadow: 2px 4px 15px hsla(0, 36%,70%,0.5);
+}
+input::placeholder{
+   color:#9A6B69;
+}
+button{
+   background-image: linear-gradient(135deg, hsl(0,80%,86%),hsl(0,74%,74%));
+   border: none;
+   border-radius: 50px;
+   padding: 15px;
+   width: 100px;
+   position: absolute;
+   transition: opacity 0.2s ease;
+   top: 0;
+   right: 0;
+   box-shadow: 2px 2px 15px hsla(0, 36%,70%,0.5);
+}
+button:hover{
+   opacity: 0.6;
+}
+button:focus{
+   box-shadow: 0px 0px 15px hsla(0, 36%,70%,0.5);
+}
+#error{
+   position: absolute;
+   top:10px;
+   right: 115px;
+}
+small{
+   margin: 20px;
+   display: block;
+   color: #9A6B69;
+   font-weight: 500;
+}
+@media screen and (max-width: 578px) {
+   .circle-text{
+      margin-top: 15px;
+      margin-bottom: 0;
+      padding-top: 12px;
+      padding-bottom: 5px;
+   }
+   #bg-mobile{
+       display: block;
+       max-width: 392px;
+       margin: 0 -20px;
+   }
+   .left{
+       width: 100%;
+       padding: 0 20px;
+   }
+   .right{
+       display: none;
+   }
+   h1{
+      padding-top: 0px;
+      line-height: 1;
+   }
+   p{
+      font-size: 14px;
+      letter-spacing: 0;
+      padding-bottom: 10px;
+      /* padding: 0 20px; */
+   }
+   small{
+      margin-top: 0;
+   }
+}

@@ -1,0 +1,613 @@
+1. Noble Integer
+Given a list of integers A, find if an integer P exists in the list such that the number of integers greater than P in the list equals P.
+
+Input
+N number of elements in the list (N >= 2).
+
+N lines each line representing a single interger in the list
+
+Output
+1 if such integer exists
+
+-1 if no such integer exists
+
+Example
+Input:
+
+4
+
+3
+
+2
+
+1
+
+3
+
+Output:
+
+1
+
+Here number of elements greater than 2 is 2.
+
+
+
+
+
+
+2. Max by now
+You have been given n, denoting the number of input values. For each input, you have to print the maximum input taken so far.
+
+Note:
+You don't need to consider n in taking out this maximum.
+For the first input of n values, the max value will be that value itself.
+Input Format
+First line denotes the number of inputs n. The next n lines contains one integer each, denoting input values.
+
+Output Format
+There will be n lines in the output, containing one integer in each line, ith line denotes the maximum of the i inputs taken so far.
+
+Sample Input
+5
+3
+2
+5
+10
+8
+Sample Output
+3
+3
+5
+10
+10
+
+
+
+3. Number occurring maximum times
+Given a list of N integers sorted in ascending order, Please find the number which occurs 4 times in the array
+
+Input
+First number is N (the number of integers given) Followed by the N numbers
+
+Output
+Print the number which occurs 4 times. print -1 if such a number doesnt exist
+
+Example
+Input: 10
+
+1
+
+2
+
+3
+
+4
+
+4
+
+4
+
+4
+
+5
+
+6
+
+6
+
+Output: 4
+
+4. second-largest
+Description
+Given an array of integers, your task is to write a program that efficiently finds the second 
+largest element present in the array. Print NA if second largest element does not exist.
+
+Note: You cannot sort the given array.
+
+Input format
+First line contains t, the no of test cases.
+
+Each test case include 2 lines:
+
+First line of each test case contains N, the length of the given array.
+The next line contains N space separated integers, denoting the elements of the array.
+Output format
+One line for each test, a integer denoting the second largest element.
+
+Sample input
+3
+6
+12 35 1 10 34 1
+3
+10 5 10
+3
+10 10 10
+Sample output
+34
+5
+NA
+
+
+
+
+5.  Good Pairs
+We have an array of n integers, say arr. A pair of indices i, j (i < j) ,
+ is called good if arr[i] is same as arr[j]. We want to count the number of good pairs in the given array.
+
+Input
+Single line containing a list of integers separated by spaces
+
+Output
+Single integer representing total number of good pairs
+
+Example
+Input:
+
+71 32 -53 71 71 -53
+Output:
+
+4
+Explanation:
+(0, 3) is a good pair, because arr[0] is 71 and arr[3] is also 71. Similarly (0, 4), (2, 5) 
+and (3, 4) are also good pairs. So, total there are 4 good pairs in the given array.
+
+
+6. Rotate Array Clockwise
+Write a function which takes an array arr and a postive integer m and rotates arr clockwise, m times.
+
+Input
+First line contains a sequence of integers separated by spaces, denoting arr
+Second line contains a positive integer, denoting m
+Output
+Elements of the rotated array, one in each line
+
+Example
+Input:
+
+2 1 3 4 5 10
+
+1
+
+Output:
+
+10
+2
+1
+3
+4
+5
+
+Explanation
+Given array is [2, 1, 3, 4, 5, 10]. m is 1, which means that the array needs to
+ be rotated clockwise 1 time. One clockwise rotation means all the elements get shifted towards right by 1 position.
+ The last element will get shifted to the first postion. So, the rotated array will be [10, 2, 1, 3, 4, 5].
+
+
+
+ 7.  Lucky Number
+Given a sorted array of n integers, a lucky integer is an integer which has a frequency in the array equal to its value.
+
+Return a lucky integer in the array. If there is no lucky integer return -1.
+
+If you have multiple lucky integers, please return the first lucky integer in the array (lucky number with the least index).
+
+Input
+First line contains a positive integer n, denoting the number of elements in the array. 
+It is followed by n lines. Each line contains one integer denoting an element in the array.
+
+Output
+One line specifying the lucky integer in the array
+
+Example
+Input:
+
+4
+2
+2
+3
+4
+Output:
+
+2
+Explanation
+First line is 4, i.e. 4 elements in the array. The array is [2,2,3,4]. 
+We can see that number 2 is repeating 2 times hence it is the lucky number which is our output
+
+
+8.  Matrix Diagonal
+Write a function which takes a 2 dimentional array of size nxn where n > 0 and changes its diagonal according to the following conditions
+
+if an element e < 0 replace it with 0
+If element e >= 0 replace it with 1
+Input
+The first line contains n, denoting the number of lists.
+
+This is followed by n lines. Each line contains n integers separated by a space
+
+Output
+n lines, each line representing a list of numbers separated by a space.
+
+Example
+Input:
+
+4
+
+2 0 1 4
+
+0 -1 1 10
+
+0 0 0 0
+
+1 2 3 4
+
+Output:
+
+1 0 1 4
+
+0 0 1 10
+
+0 0 1 0
+
+1 2 3 1
+
+
+
+
+9.   Transpose Matrix
+You are given m lists. Each list contains n elements. Represented as a matrix, this has m rows and n columns. Your task is to transpose the matrix and output the result.
+
+Write a function with name transposeMatrix which takes a matrix as list of lists as input returns a transposed matrix as list of lists.
+
+Matrix transpose
+Given a matrix:
+
+ a b c d
+
+ e f g h
+the transpose is:
+
+ a e
+ b f
+ c g
+ d h
+Input
+The first line contains m, denoting the number of lists
+
+This is followed by m lines each containing n integers separated by space
+
+Output
+n lines should contain each row of the matrix, with the elements separated by a space
+
+Example
+Input:
+
+3
+
+1 2 3 4
+
+5 6 7 8
+
+9 10 11 12
+
+Output:
+
+1 5 9
+
+2 6 10
+
+3 7 11
+
+4 8 12
+
+You just have. to return transformed matrix as a list, printing is taken care of by the judge.
+
+
+
+10.  Fold Array
+You are given an array of size n. Imagine the array as a length of rope. You have to fold the rope at the middle. You are also given an input integer numOfFolds that speci
+fies the number of times you should fold your array.
+
+To illustrate more, say the given array is 1,4,9. Folding it in the middle results in 10, 4 as 9 and 1 get combined by the fold.
+
+Say the given array is 1,10,20,21,2. Folding it would lead to: 3, 31, 20 as 2, 1 have combined and 10, 21 have combined.
+
+Based on the numOfFolds repeat folding.
+
+Input.
+The first line contains n, the number of elements in the array.
+
+This is followed by n lines, each containing one integer
+
+The last line contains m, the number of folds to do.
+
+Output
+The first line contains k, the number of elements in the final array
+
+This is followed by k lines, each containing one integer element of the output array
+
+Example
+Odd length array
+Input:
+
+5
+
+-1
+
+4
+
+2
+
+3
+
+1
+
+1
+
+Output:
+
+3
+
+0
+
+7
+
+2
+
+Even length array
+Input:
+
+6
+
+3
+
+1
+
+6
+
+7
+
+2
+
+3
+
+1
+
+Output:
+
+3
+
+6
+
+3
+
+13
+
+Explanation
+Odd number n
+The first line contains 5 indicating 5 elements in the input array
+
+The next 5 lines contain the array elements: -1, 4, 2, 3, 1
+
+The last line contains 1 indicating one fold to be made
+
+The first and last element merge: -1 + 1 = 0
+
+The second and 4th element merge: 4 + 3 = 7
+
+The middle element is 2. It remains unchanged because of the fold
+
+So the result is 0, 7, 2
+
+Even number n
+The first line contains 6 indicating 6 elements in the input array
+
+The next 6 lines contain the array elements: 3, 1, 6, 7, 2, 3
+
+The last line contains 1 indicating one fold to be made
+
+The first and last element merge: 3 + 3 = 6
+
+The second and 5th element merge: 1 + 2 = 3
+
+The third and 4th element merge: 6 + 7 = 13
+
+So the result is 6, 3, 13
+
+
+11.    Shuffle array
+Description
+Given an array consisting of 2n elements in the
+ form [x1, x2, ..., xn, y1, y2, ..., yn], suffle the array into [x1, y1, x2, y2, ... , xn, yn]. Assume that n is never 0.
+
+Input format
+First line contains a positive integer, denoting n. It is followed by 2n lines. Each line contains one integer.
+
+Output format
+2n lines where each line contains one element of the shuffled array.
+
+Sample input
+3
+2
+5
+1
+3
+4
+7
+Sample output
+2
+3
+5
+4
+1
+7
+Explanation
+First line is 3, i.e. Following 6 lines are the elements of the array.
+The first 3 lines contains the first half of the array and the 2nd set of 3 elements contain the second half of the array.
+First 2 lines of output will be first element of first half, first element of second half so the first 2
+ lines of the output are 2 and 3.
+Next 2 lines of output will be second element of first half and second element of second half, 
+so the next 2 lines of output will be 5 and 4
+Next 2 lines of output will be third element of first half and third
+ element of second half, so the next 2 lines of output will be 1 and 7
+
+Arithmatic 
+
+Product & SUM
+Given an integer n, return the difference between the product of its digits
+ and the sum of its digits. Assume that n is a non-negative integer.
+
+Input
+One line containing an integer, denoting n
+
+Output
+One line containing an integer, denoting the difference between product and sum of the digits of n
+
+Example
+Input
+
+234
+
+Output
+
+15
+
+Explanation
+
+Product of digits = 2 * 3 * 4 = 24 
+Sum of digits = 2 + 3 + 4 = 9 
+Result = 24 - 9 = 15
+Input
+
+4421
+
+Output
+
+21
+
+Explanation
+
+Product of digits = 4 * 4 * 2 * 1 = 32 
+Sum of digits = 4 + 4 + 2 + 1 = 11 
+Result = 32 - 11 = 21
+
+
+
+
+
+
+
+Dice
+You are given a cubic dice with 6 faces. All the individual faces have a number printed on them. The numbers are in the range of 1 to 6, like any ordinary dice. You will be provided the number on the top face of this cube, your task is to guess the number on the opposite face of the cube.
+
+Interactive 3-D Image of a dice
+
+Constraints:
+1 <= N <= 6
+Input
+One integer, denoting the number on the top face.
+
+Output
+One Integer, denoting the number on the opposite face.
+
+Example
+Input1:
+
+6
+Output1:
+
+1
+Input2:
+
+2
+Output2:
+
+5
+
+
+
+
+reverse integer
+Given an integer, reverse digits of an integer
+
+Input
+1 line containing the integer to reverse
+
+Output
+1 line containing the reversed integer
+
+Example
+Input: 123
+
+Output: 321
+
+Input: 120
+
+Output: 21 because starting 0 can be removed
+
+Input: -123
+
+Output: -321
+
+
+
+
+
+
+Clock
+Given two positive integers num1 and num2, the task is to find the sum of the two numbers on a 12 hour clock rather than a number line.
+
+Input
+Two space seperated values denoting num1, num2 respectively.
+
+Output
+One integer, denoting the required result.
+
+Example
+Input1:
+
+5 7
+Output1:
+
+12
+Input2:
+
+5 10
+Output2:
+
+3
+
+
+
+Mean
+Given the marks of n students, calculate the mean.
+
+Note: If the result is a decimal Value, print it's floor value.
+
+Input
+First line contains an integer, denoting n.
+
+Second line contains n space seperated integers, denoting the marks.
+
+Output
+One Integer, denoting the mean of the marks.
+
+Example
+Input:
+
+4
+56 67 30 82
+Output:
+
+58
+Explanation:
+
+56+67+30+82 = 235
+Mean = 235/4 = 58.75
+floor(58.75) is 58
+So, the Output is 58.
+
+
+
+
+
+

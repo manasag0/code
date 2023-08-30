@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>
+            Login Page
+        </h1>
+        <section>
+            <label for="name">Name</label>
+            <input type="text" id="name" min="5" max="15">
+        </section>
+        <section>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </section>
+        <section>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone">
+        </section>
+        <section><p> Gender  :</p>  
+            <label for="male"></label>
+            <input type="radio" id="male" name="gender">Male
+            <label for="female"></label>
+            <input type="radio" id="female" name="gender">Female
+        </section>
+        <section><p>Language Known</p>
+            <label for="kannada"></label>
+            <input type="checkbox" id="kannada" name="kannada" value="language">Kannada
+            <label for="telugu"></label>
+            <input type="checkbox" name="telugu" value="language" id="telugu">Telugu
+            <label for="english"></label>
+            <input type="checkbox" name="english" id="english" value="language">English
+            <label for="Hindi"></label>
+            <input type="checkbox" name="Hindi" id="Hindi" value="language">Hindi
+        
+        </section>
+        <section>
+            <input type="button" id="button" value="Sign Up">
+        </section>
+    </form>
+</body>
+</html>

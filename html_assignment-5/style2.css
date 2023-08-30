@@ -1,0 +1,16 @@
+li:nth-child(odd){
+    color: red;
+}
+li:nth-child(even){
+    color: green;
+}
+h3{
+    font-size: 30px;
+}
+
+span::after{
+    content: "|";
+}
+span:last-child::after{
+    content: "";
+}

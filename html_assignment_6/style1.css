@@ -1,0 +1,38 @@
+body{
+    align-items: center;
+    font-size: 23px;
+    font-family: 'pappins' sans-serif;
+}
+.zero{
+    height: 100px;
+    width: 100px;
+    border: 2px solid green;
+    border-radius: 50%;
+   
+}
+img{
+    height: 99px;
+    width: 99px;
+    border-radius: 50%;
+}
+.maincontainer{
+    width: 50%;
+    margin: auto;
+    background-color: bisque;
+}
+p{
+    background-color: yellow;
+    color: blueviolet;
+}
+ul > li {
+    list-style: none;
+    padding-bottom: 4px;
+}
+
+span {
+    font-weight: 100;
+}
+.strong{
+    color: #542;
+    padding-left: 10px;
+}

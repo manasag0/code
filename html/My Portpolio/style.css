@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://img.freepik.com/premium-photo/old-vintage-paper-texture-decorative-blank-retro-design-background_213524-185.jpg?w=1380');
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Poppins',sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+p{
+    font-size: 2rem;
+    width: 700px;
+    position: fixed;
+    top: 25rem;
+    left: 14rem;
+}
+h1{
+ background-color: #fff;
+ display: inline-block;
+ font-size: 6rem;
+ padding: 1.5rem;
+ top: 2.5rem;
+ font-weight: 200;
+ position: fixed;
+ /* 
+ left: 23rem; */
+}
+a{
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+ol{
+position: fixed;
+top: 8rem;
+right: 11rem;
+font-size: 2rem;
+margin: 0;
+}
+h2{
+    position: fixed;
+    top: 10.5rem;
+    left: 28rem;
+    padding: 2rem;
+    }
+h2 span {
+color: #fff;
+background-color: #556272;
+font-size: 2rem;
+display: inline-block;
+padding: 1.8rem;
+}
+h2 span:first-child{
+    transform: translate(5rem, 0rem);
+}
+h2 span:last-child{
+    transform: translate(-5rem,-2rem);
+}
+ul h3 {
+    color: #29415e;
+    margin: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    *{
+        position: static !important;
+        max-width: 100%;
+    }
+}

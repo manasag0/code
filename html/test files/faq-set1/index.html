@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student and Teacher Table form</title>
+</head>
+<body>
+    <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <br><br>
+      <table id="table">
+        <tr>
+          <th>Name</th>
+          <th>Age</th> 
+          <th>Role</th>
+        </tr>
+      </table>
+  
+</body>
+<script>
+    const form = document.querySelector("#form");
+    const table = document.querySelector("#table");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = document.querySelector("#name").value;
+      const age = document.querySelector("#age").value;
+      const role = document.querySelector("#role").value;
+
+      const newRow = table.insertRow();
+      newRow.insertCell().innerHTML = name;
+      newRow.insertCell().innerHTML = age;
+      newRow.insertCell().innerHTML = role;
+    });
+  </script>
+
+</html>
