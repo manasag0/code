@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style="display: flex; flex-direction: column; justify-content: center;align-items: c; text-align: center;  ">
+
+        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Google</a>
+        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Google2</a>
+        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
+            google3
+        </a>
+        <a href="tel:1234567890">Mobile no. - 1234567890</a>
+        <div>
+    <button id="button">Click Me</button>
+        <div id="myDev"></div>
+    </div>
+</body>
+<script>
+
+
+
+
+
+    const button = document.querySelector('#button');
+    const atags = document.getElementsByTagName('a')
+    const lastA = atags[atags.length-1]
+    button.addEventListener('click', () => {
+     
+             lastA.style.color ="red"
+        alert("Last link terned into red")
+        setTimeout(function(){
+            let newP = document.createElement('p')
+
+newP.textContent = "TEsting mode you can win. not immidetly but definitly"
+let myDev = document.getElementById("myDev")
+myDev.appendChild(newP)
+        },2000)
+
+    })
+
+</script>
+</html>
